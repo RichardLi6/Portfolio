@@ -1,6 +1,5 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import wellbotImg from "@/public/wellbot.png";
 import commandlineImg from "@/public/commandLine.png";
@@ -88,8 +87,6 @@ export const experiencesData = [
     date: "Aug 2017 - May 2018",
   },
 ] as const;
-
-// icon: React.createElement(FaReact),
 
 export const projectsData = [
   {
