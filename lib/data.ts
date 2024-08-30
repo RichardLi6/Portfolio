@@ -92,49 +92,49 @@ export const projectsData = [
   {
     title: "Wellbot - Fitness web application",
     description:
-      "I collaborated with a team to develop features for generating and customizing workouts, and tracking macros, to enhance fitness tracking accuracy.",
+      "A fitness web application for generating workouts, customizing workouts, and tracking macros to enhance fitness tracking accuracy.",
     tags: ["EJS", "CSS", "MongoDB", "JavaScript", "Git", "Bootstrap"],
     imageUrl: wellbotImg,
   },
   {
     title: "UsingCommandLine",
     description:
-      "I created a website that provides a comprehensive guide on how to use the command line, including basic commands, file management, and more.",
+      "A comprehensive guide on how to use the command line, including basic commands, file management, and more.",
     tags: ["MkDocs", "Markdown", "Git", "Command Line"],
     imageUrl: commandlineImg,
   },
   {
     title: "Sustainable Recipes",
     description:
-      " I worked in a team of 4 to build web app that generates recipes based on ingredients you have at home using API.",
+      " A web app for generated recipes through API based on available ingredients.",
     tags: ["HTML", "CSS", "JavaScript", "Node.js", "Firebase"],
     imageUrl: sustainablerecipesImg,
   },
   {
     title: "Arcea Phantasy - Python Game Program",
     description:
-      "I developed a text-based RPG game using Python, where players can explore a fantasy world, battle monsters, use skills, and level up.",
+      "A text-based RPG game using Python, where players can explore a fantasy world, battle monsters, use skills, and level up.",
     tags: ["Python"],
     imageUrl: arceaPhantasyImg,
   },
   {
     title: "W-Clinics Health Web Application",
     description:
-      "I collaborated with a team to develop a web application that allows users to book appointments, view their medical history, and find nearby walk-in clinics.",
+      "Developed a web application that allows users to book appointments, view their medical history, and find nearby walk-in clinics.",
     tags: ["HTML", "CSS", "JavaScript", "Firebase", "Git", "Bootstrap"],
     imageUrl: wclinicsImg,
   },
   {
     title: "VanML Data Science Hackathon",
     description:
-      "At the VanML Data Science Hackathon 2023, I analyzed 211 BC Helpline call data pre- and post-COVID-19, developed a correlation graph in R to explore links with COVID-19 cases, and presented insights with recommendations for future crisis planning.",
+      "Analyzed 211 BC Helpline call data pre- and post-COVID-19, developed a correlation graph in R to explore links with COVID-19 cases, and presented insights with recommendations for future crisis planning.",
     tags: ["R", "Python", "Git"],
     imageUrl: VanMLImg,
   },
   {
-    title: "Pathway Analysis: Relationship Status Impact on Happiness",
+    title: "Pathways in which Relationship Status impact Happiness",
     description: 
-      "I conducted mediation analysis in R to explore the link between relationship status and happiness during COVID-19, and presented the findings at the Canadian Human Connection conference, emphasizing strategies for enhancing happiness during the pandemic",
+      "Analyzed the link between relationship status and happiness during COVID-19; presented the findings at the Canadian Human Connection conference, highlighting strategies to enhance happiness.",
     tags: ["R"],
     imageUrl: relationshipHappinessImg,
   },
