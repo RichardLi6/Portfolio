@@ -3,13 +3,18 @@
 import React from 'react'
 import SectionHeading from './section-heading'
 import {motion} from 'framer-motion'
+import { useSectionInView } from '@/lib/hooks';
+
 
 export default function About() {
+  const {ref} = useSectionInView("About");
+  
   return (
-    <motion.section className ="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40"
+    <motion.section ref={ref} className ="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28" //scroll-margin-mt-28 is used to offset the scroll position when we click on the about link in the navbar.
     initial={{ opacity: 0, y: 100}}
     animate={{ opacity: 1, y: 0}}
     transition={{delay: 0.175}}
+    id="about" // this is the id of the about section, so when we click on the about link in the navbar, it will take us to the about section.
     >
       <SectionHeading> About me</SectionHeading>
       <p className="mb-3">
