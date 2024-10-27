@@ -43,7 +43,7 @@ export const experiencesData = [
     location: "BCIT | Vancouver, BC",
     description:
       "I'm a student at BCIT studying Computer Systems Technology. I'm learning about software development, databases, networking and more.",
-    icon: React.createElement(LuGraduationCap),
+    icon: React.createElement(LuGraduationCap), // React.createElement is used to render the icon rather than do use jsx <LuGraduationCap /> in tsx files
     date: "Sept 2023 - present",
   },
   {
@@ -142,6 +142,11 @@ export const projectsData = [
 ] as const; 
 
 export const skillsData = [
+  "Python",
+  "Kotlin",
+  "Java",
+  "C",
+  "C++",
   "HTML",
   "EJS",
   "CSS",
@@ -158,10 +163,7 @@ export const skillsData = [
   "SQL",
   "Jupyter",
   "R",
-  "C",
   "Express",
-  "Python",
-  "Java",
   "Framer Motion",
   "MkDocs",
   "Markdown",
