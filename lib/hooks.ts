@@ -3,9 +3,9 @@ import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { SectionName } from "./types";
 
-export function useSectionInView(sectionName: SectionName, threshold = 0.1) {
+export function useSectionInView(sectionName: SectionName) {
     const {ref, inView} = useInView({
-        threshold, // this is the percentage of the section that needs to be in view for the inView to be
+      threshold: [0.1, 0.25, 0.5], // this is the percentage of the section that needs to be in view for the inView to be
       });
       const { setActiveSection, timeOfLastClick } = useActiveSectionContext(); // We are just extracting the setActiveSection function from active-section.context.tsx, to use it.
     
