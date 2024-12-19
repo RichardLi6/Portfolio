@@ -59,7 +59,7 @@ export default function Intro() {
         animate={{ opacity:1, y: 0}}
       >
         <span className="font-bold">Hello, I'm Richard.</span> I'm a{" "}
-        <span className="font-bold">BCIT CST student</span> with a background in {" "}
+        <span className="font-bold">BCIT Computer Systems Technology student</span> with a background in {" "}
         <span className="font-bold">Health Sciences</span>  I enjoy
         using my knowledge in <span className="italic"> programming </span> and <span className="italic"> Health field </span>to contribute to the world.
       </motion.h1>
@@ -84,18 +84,18 @@ export default function Intro() {
         className="opacity-70 group-hover:translate-x-1 transition"/> </Link>
 
         <a className ="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 \
-        transition cursor-pointer border border-black/10 " href="/Li_Richard_Resume.pdf" download> 
+        transition cursor-pointer borderBlack " href="/Li_Richard_Resume.pdf" download> 
             Download CV <HiDownload
             className="opacity-60 group-hover:translate-y-1 transition"/>
         </a>
 
         <a className ="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15]active:scale-105 \
-        transition cursor-pointer border border-black/10" href="https://www.linkedin.com/in/richard-li7/" target="_blank">
+        transition cursor-pointer borderBlack" href="https://www.linkedin.com/in/richard-li7/" target="_blank">
             <BsLinkedin />
         </a>
 
         <a className ="bg-white p-4 text-gray-700 hover:text-gray-950  flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15]  active:scale-105 \
-        transition cursor-pointer border border-black/10" href="https://github.com/RichardLi6" target="_blank">
+        transition cursor-pointer borderBlack" href="https://github.com/RichardLi6" target="_blank">
             <FaGithubSquare />
         </a>
 
