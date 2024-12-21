@@ -29,20 +29,18 @@ export default function Contact() {
       > {/* So we are choosing 100% if less than 38rem, when we shrink*/}
         <SectionHeading> Contact Me</SectionHeading>
         <p className= "text-gray-700 -mt-4"> Please contact me directly at {" "}
-          <a className="underline" href="mailto:richardli.72@hotmail.com">
-            richardli.72@hotmail.com
+          <a className="underline" href="mailto:richardli.7272@gmail.com">
+            richardli.7272@gmail.com
             </a> {" "}
              or through this form
              </p>
 
-             <form className = "mt-10 flex flex-col"
-        action={async (FormData) => {
-          console.log("Running on client");
-          console.log(FormData.get("senderEmail"));
-          console.log(FormData.get("message"));
-          await sendEmail(FormData);
-        }}
-        >
+             <form 
+             className = "mt-10 flex flex-col" 
+             action={async (formData) => {
+              await sendEmail(formData)
+              }}
+              > {/* action is the function we want to run when the form is submitted and we don't use async await in the action because it is not needed */}
           <input 
           className="h-14 px-4 rounded-lg borderBlack"
           name="senderEmail"
@@ -56,7 +54,7 @@ export default function Contact() {
           name="message"
           placeholder="Your message"
           required
-          maxLength={500}
+          maxLength={5000}
           />
           <button type="submit" className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem]
           bg-gray-900 text-white rounded-full 
