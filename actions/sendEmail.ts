@@ -9,6 +9,12 @@ export const sendEmail = async (formData: FormData) => {
   const senderEmail = formData.get('senderEmail'); // get the senderEmail from the form data
   const message = formData.get('message'); // get the message from the form data
 
+  // Filler text to hide the sender's email address with '.' which is padding
+  const minLength = 80; // Ideal number to hide from mail app preview
+  const currentLength = (message as string).length;
+  const paddingNeeded = Math.max(0, minLength - currentLength); // if the current length is less than the min length, we add padding or we choose 0
+  const padding = ".".repeat(paddingNeeded);
+
   // server-side validation
   if (!validateString(senderEmail, 320)) {
     return {
@@ -23,11 +29,11 @@ export const sendEmail = async (formData: FormData) => {
 
   try {
     await resend.emails.send({
-      from: "onboard@resend.dev",
+      from: `Contact Form <onboard@resend.dev>`,
       to: "richardli.7272@gmail.com",
-      subject: "Message from contact form",
+      subject: "Message from Website contact form",
       reply_to: senderEmail as string, /* we are asserting it's a string because typescript doesn't know */
-      text: message as string,
+      text: `${message as string}\n\n ${padding} From: ${senderEmail as string} `,
     });
   }
   catch (error) {
