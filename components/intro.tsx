@@ -19,7 +19,7 @@ export default function Intro() {
   } = useActiveSectionContext();
   
   return (
-    <section ref = {ref} id = "home" className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[10 0rem]">
+    <section ref = {ref} id = "home" className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
       <div className='flex items-center justify-center'>
         <div className="relative">
         <motion.div
@@ -56,12 +56,13 @@ export default function Intro() {
       </div>
       <motion.h1 className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity:0, y: 100}}
-        animate={{ opacity:1, y: 0}}
+        animate={{ opacity:1, y: 1}}
       >
-        <span className="font-bold">Hello, I'm Richard.</span> I'm a{" "}
-        <span className="font-bold">BCIT Computer Systems Technology student</span> with a background in {" "}
-        <span className="font-bold">Health Sciences</span>  I enjoy
-        using my knowledge in <span className="italic"> programming </span> and <span className="italic"> Health field </span>to contribute to the world.
+        <span className="font-bold">Hi, I'm Richard.</span> {" "}
+        <span className="font-bold">I'm a BCIT Computer Systems Technology student</span> with a background in {" "}
+        <span className="font-bold">Health Sciences</span>.
+        I'm passionate about working with <span className="italic"> software </span> and <span className="italic"> data</span>, <span>whether
+        it's developing solutions, analyzing data, or using technology to solve real-world problems.</span>
       </motion.h1>
 
       <motion.div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
