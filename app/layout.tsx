@@ -4,13 +4,14 @@ import { Inter } from 'next/font/google'
 import ActiveSectionContextProvider from "@/context/active-section.context";
 import { Toaster } from "react-hot-toast";
 import Footer from "@/components/footer";
+import ThemeSwitch from "@/components/theme-switch";
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Richard | Personal Portfolio',
-  description: "Hello, I\'m Richard. I\'m a BCIT CST student with a background in Health Sciences,\
-  I enjoy using my knowledge in programming and Health field to contribute to the world.",
+  description: "Hi, I'\m a BCIT Computer Systems Technology student with a background in Health Sciences.\
+I'\m passionate about working with software and data, from developing solutions and analyzing data to using technology to solve real-world problems."
 };
 
 export default function RootLayout({
@@ -28,13 +29,12 @@ export default function RootLayout({
         sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"></div>
     
     <ActiveSectionContextProvider>
-
       <Header />
       {children}
       <Toaster position="top-right" />
       <Footer />
-      {/* <ThemeSwitch /> */} {/* We will add this later reflecting dark/light mode*/}
     </ActiveSectionContextProvider>
+      <ThemeSwitch /> 
       </body>
     </html>
   )
