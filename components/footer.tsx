@@ -8,7 +8,8 @@ export default function Footer() {
       </small>
       <p className="text-xs">
       <span 
-      className="font-semibold">About this website:</span> built with React & Next.js (App Router & 
+      className="font-semibold">About this website: </span> 
+built with React & Next.js (App Router & 
       Server Actions), Tailwind CSS, TypeScript, Framer Motion, React Hot Toast, React Email & Resend, 
         and hosted on Vercel.
         </p>
