@@ -1,7 +1,7 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
-import wellbotImg from "@/public/wellbot.png";
+import wellbotImg from "@/public/wellBot.png";
 import commandlineImg from "@/public/commandLine.png";
 import sustainablerecipesImg from "@/public/sustainableRecipes.png";
 import arceaPhantasyImg from "@/public/arceaPhantasy.png";
