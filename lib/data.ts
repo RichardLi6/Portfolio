@@ -1,13 +1,13 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
-// import wellbotImg from "@/public/wellbot.png";
-// import commandlineImg from "@/public/commandLine.png";
-// import sustainablerecipesImg from "@/public/sustainableRecipes.png";
-// import arceaPhantasyImg from "@/public/arceaPhantasy.png";
-// import wclinicsImg from "@/public/wclinics.png";
-// import VanMLImg from "@/public/VanML.jpg";
-// import relationshipHappinessImg from "@/public/relationshipHappiness.png";
+import wellbotImg from "@/public/wellbot.png";
+import commandlineImg from "@/public/commandLine.png";
+import sustainablerecipesImg from "@/public/sustainableRecipes.png";
+import arceaPhantasyImg from "@/public/arceaPhantasy.png";
+import wclinicsImg from "@/public/wclinics.png";
+import VanMLImg from "@/public/VanML.jpg";
+import relationshipHappinessImg from "@/public/relationshipHappiness.png";
 
 
 export const links = [
@@ -94,49 +94,49 @@ export const projectsData = [
     description:
       "A fitness web application for generating workouts, customizing workouts, and tracking macros to enhance fitness tracking accuracy.",
     tags: ["EJS", "CSS", "MongoDB", "JavaScript", "Git", "Bootstrap"],
-    imageUrl: "/wellbot.png/","
+    imageUrl: wellbotImg,
   },
   {
     title: "UsingCommandLine",
     description:
       "A comprehensive guide on how to use the command line, including basic commands, file management, and more.",
     tags: ["MkDocs", "Markdown", "Git", "Command Line"],
-    imageUrl: "/commandLine.png/",
+    imageUrl: commandlineImg,
   },
   {
     title: "Sustainable Recipes",
     description:
       " A web app for generated recipes through API based on available ingredients.",
     tags: ["HTML", "CSS", "JavaScript", "Node.js", "Firebase"],
-    imageUrl: "/sustainableRecipes.png/",
+    imageUrl: sustainablerecipesImg,
   },
   {
     title: "Arcea Phantasy - Python Game Program",
     description:
       "A text-based RPG game using Python, where players can explore a fantasy world, battle monsters, use skills, and level up.",
     tags: ["Python"],
-    imageUrl: "/arceaPhantasy.png/",
+    imageUrl: arceaPhantasyImg,
   },
   {
     title: "W-Clinics Health Web Application",
     description:
       "Developed a web application that allows users to book appointments, view their medical history, and find nearby walk-in clinics.",
     tags: ["HTML", "CSS", "JavaScript", "Firebase", "Git", "Bootstrap"],
-    imageUrl: "/wclinics.png/",
+    imageUrl: wclinicsImg,
   },
   {
     title: "VanML Data Science Hackathon",
     description:
       "Analyzed 211 BC Helpline call data pre- and post-COVID-19, developed a correlation graph in R to explore links with COVID-19 cases, and presented insights with recommendations for future crisis planning.",
     tags: ["R", "Python", "Git"],
-    imageUrl: "/VanML.jpg/",
+    imageUrl: VanMLImg,
   },
   {
     title: "Pathways in which Relationship Status impact Happiness",
     description: 
       "Analyzed the link between relationship status and happiness during COVID-19; presented the findings at the Canadian Human Connection conference, highlighting strategies to enhance happiness.",
     tags: ["R"],
-    imageUrl: "/relationshipHappiness.png/",
+    imageUrl: relationshipHappinessImg,
   },
   
 ] as const; 
