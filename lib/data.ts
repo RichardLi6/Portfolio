@@ -6,7 +6,7 @@ import commandlineImg from "@/public/commandLine.png";
 import sustainablerecipesImg from "@/public/sustainableRecipes.png";
 import arceaPhantasyImg from "@/public/arceaPhantasy.png";
 import wclinicsImg from "@/public/wclinics.png";
-import VanMLImg from "@/public/VanML.jpg";
+import VanMLImg from "@/public/VanMl.jpg";
 import relationshipHappinessImg from "@/public/relationshipHappiness.png";
 
 
